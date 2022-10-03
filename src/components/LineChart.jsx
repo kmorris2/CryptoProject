@@ -1,4 +1,10 @@
-import React from 'react';
+// import React from 'react';
+// import React from 'react';
+// import { Line } from 'react-chartjs-2';
+// import { Col, Row, Typography } from 'antd';
+// import { Chart as ChartJS } from 'chart.js/auto'
+// const { Title } = Typography;
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -9,6 +15,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+// import { Chart as ChartJS } from 'chart.js/auto';
 import { Line } from 'react-chartjs-2';
 import { Col, Row, Typography } from 'antd';
 
@@ -18,12 +25,16 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
   const coinPrice = [];
   const coinTimestamp = [];
 
+  // const len = coinHistory?.data?.history?.length;
+  // const ylen = coinHistory?.data?.history?.length;
 
   for (let i = 0; i < coinHistory?.data?.history?.length; i += 1) {
+    // for (let i = len-1; i > 0; i --) {
     coinPrice.push(coinHistory?.data?.history[i].price);
   }
 
   for (let i = 0; i < coinHistory?.data?.history?.length; i += 1) {
+    // for (let i = ylen-1; i > 0; i --) {
     coinTimestamp.push(new Date(coinHistory?.data?.history[i].timestamp * 1000).toLocaleDateString());
   }
 
@@ -60,7 +71,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
     Tooltip,
     Legend
   );
-
+  console.log(coinHistory)  
 
   return (
     <>
