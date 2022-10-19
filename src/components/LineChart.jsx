@@ -5,19 +5,19 @@ import { Chart as ChartJS } from 'chart.js/auto';
 const { Title } = Typography;
 
 
-// // import {
-// //   Chart as ChartJS,
-// //   CategoryScale,
-// //   LinearScale,
-// //   PointElement,
-// //   LineElement,
-// //   Title,
-// //   Tooltip,
-// //   Legend,
-// // } from "chart.js";
+// import {
+//   Chart as ChartJS,
+//   CategoryScale,
+//   LinearScale,
+//   PointElement,
+//   LineElement,
+//   Title,
+//   Tooltip,
+//   Legend,
+// } from "chart.js";
 
-// // import { Line, Chart } from 'react-chartjs-2';
-// // import { Col, Row, Typography } from 'antd';
+// import { Line, Chart } from 'react-chartjs-2';
+// import { Col, Row, Typography } from 'antd';
 
 
 const LineChart = ({ coinHistory, currentPrice, coinName }) => {
